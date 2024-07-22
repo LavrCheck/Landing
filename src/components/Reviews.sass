@@ -1,0 +1,62 @@
+@import '../styles/colors.sass'
+
+.Reviews
+    height: auto
+    width: 100%
+    background-color: $lightGrey
+    display: flex
+    justify-content: center
+    align-items: center
+
+    .overlay
+        width: 100%
+        max-width: 1200px
+
+    h2
+        font-weight: 600
+        font-size: 40px
+        line-height: 56px
+        text-align: center
+        color: $black
+        margin: 20px 0
+
+    .slick-slide
+        display: flex
+        justify-content: center
+        margin: 20px 0
+
+    .slick-dots
+        li.slick-active
+            button:before
+                color: $primary
+
+    .card
+        width: 100% !important
+        max-width: 340px
+        min-height: 320px !important
+        background-color: $white
+        border-radius: 8px
+        box-shadow: 0 5px 24px 0 rgba(0,0,0, 0.1)
+
+        img
+            width: 44px
+            height: 44px
+            border-radius: 50%
+
+        strong
+            font-weight: 600
+            font-size: 16px
+            line-height: 24px
+            color: $black
+
+        span
+            font-weight: 400
+            font-size: 12px
+            line-height: 16px
+            color: darken($lightGrey, 50)
+
+        p
+            font-weight: 400
+            font-size: 14px
+            line-height: 24px
+            color: $black

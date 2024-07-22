@@ -1,0 +1,21 @@
+@import '../../styles/colors.sass'
+    
+.MyButton
+    height: 64px
+    width: 251px
+    outline: unset
+    background-color: $lightGrey
+    border: none
+    font-weight: 600
+    font-size: 20px
+    line-height: 24px
+    border-radius: 4px
+    transition: 0.2s ease
+    color: $black
+
+    &:hover
+        background-color: lighten($lightGrey, 10)
+
+    &:active
+        color: lighten($black, 30)
+

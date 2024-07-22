@@ -1,0 +1,35 @@
+@import '../styles/colors.sass'
+
+.Header
+    height: 80px
+    width: 100%
+    position: absolute
+    z-index: 1
+
+    .navigation-container
+
+        @media ( max-width: 768px  )
+            justify-content: end !important
+
+        .menu
+            display: none
+            
+            @media ( max-width: 768px  )
+                display: unset
+
+        .navigation
+            height: 28px
+            width: 464px
+
+            @media ( max-width: 768px  )
+                display: none
+
+            span
+                color: $white
+                font-weight: 400
+                font-size: 16px
+                line-height: 28px
+                cursor: pointer
+
+                &:hover
+                    text-decoration: underline
