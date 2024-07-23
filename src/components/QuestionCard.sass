@@ -1,0 +1,21 @@
+@import '../styles/colors.sass'
+
+.QuestionCard
+    border: unset
+    border-top: 1px solid $lightGrey
+
+    span
+        color: darken($lightGrey, 50)
+
+    .collapse
+        transition: height 0.4s ease, opacity 0.4s ease
+        overflow: hidden
+
+    strong
+        color: $black
+        font-weight: 600
+        font-size: 18px
+        line-height: 32px
+
+    .header
+        cursor: pointer
