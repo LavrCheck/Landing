@@ -3,7 +3,7 @@ import './Form.sass'
 import { MyButton } from './ui/MyButton'
 import { useState } from 'react'
 
-export const Form = () => {
+export const Form = ({refs}) => {
 
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
@@ -11,7 +11,7 @@ export const Form = () => {
 
 
     return <>
-        <div className='Form w-100 d-flex justify-content-center'>
+        <div className='Form w-100 d-flex justify-content-center' ref={refs}>
             <div className='overlay'>
                 <Row className='flex-column w-100'>
                     <Col>

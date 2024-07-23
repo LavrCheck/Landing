@@ -12,7 +12,7 @@ export const Descriptions = () => {
 
 
     return <>
-        <Row className='Descriptions p-5 justify-content-center'>
+        <Row className='Descriptions p-5 justify-content-center w-100 m-0'>
             {descriptions.map((x) => (
                 <Col xs={11} md={5} className='m-2'>
                     <Row className='flex-column'>

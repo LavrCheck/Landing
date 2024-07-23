@@ -5,7 +5,7 @@ import arrowLeft from '../images/arrowLeft.svg'
 
 
 
-export const Menu = ({ sections, show, onHide }) => {
+export const Menu = ({ sections, show, onHide, onClick }) => {
 
     return <>
         <Offcanvas show={show} onHide={onHide} placement="end" className='Menu pt-1'>
@@ -15,7 +15,7 @@ export const Menu = ({ sections, show, onHide }) => {
             <Offcanvas.Body>
                 <Nav className="flex-column">
                     {sections.map((item, index) => (
-                        <Nav.Link key={index} href={item.link} className="link">
+                        <Nav.Link key={index} onClick={() => {onHide(); onClick(item.link)}} className="link">
                             {item.text}
                             <img src={arrowLeft}/>
                         </Nav.Link>

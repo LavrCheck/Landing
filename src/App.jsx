@@ -10,22 +10,40 @@ import { Reviews } from './components/Reviews'
 import { Questions } from './components/Questions'
 import { Descriptions } from './components/Descriptions';
 import { Form } from './components/Form,';
+import { Footer } from './components/Footer';
+import { useRef } from 'react';
 
 
 
 
 function App() {
 
+  const howItWorksRef = useRef(null)
+  const blockRef = useRef(null)
+  const questionsRef = useRef(null)
+  const formRef = useRef(null)
+
 
   return (
     <div className='App'>
-      <Header />
+      <Header refs={{ howItWorksRef, blockRef, questionsRef, formRef }} />
       <StartPage />
-      <HowItWorks />
+      <section>
+        <HowItWorks refs={{ howItWorksRef, blockRef }} />
+      </section>
       <Reviews />
-      <Questions />
-      <Descriptions />
-      <Form />
+      <section>
+        <Questions refs={questionsRef} />
+      </section>
+      <section>
+        <Descriptions />
+      </section>
+      <section>
+        <Form refs={formRef} />
+      </section>
+      <footer className='w-100'>
+        <Footer />
+      </footer>
     </div>
   )
 }

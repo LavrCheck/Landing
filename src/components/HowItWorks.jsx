@@ -13,11 +13,11 @@ const sections = [{ img: arrowUp, header: 'Прочитай задание вн�
 { img: money, header: 'Получи предложение', text: 'Ну тут все просто, не я придумал правила, но думаю так и будет)))' }
 ]
 
-export const HowItWorks = () => {
+export const HowItWorks = ({refs}) => {
 
     return <>
-        <Row className='HowItWorks flex-column align-items-center'>
-            <Col xxl={10} xs={11} className='pt-5 flex1'>
+        <Row className='HowItWorks flex-column align-items-center m-0'>
+            <Col xxl={10} xs={11} className='pt-5 flex1' ref={refs.howItWorksRef}>
                 <Row className='flex-column align-items-center justify-content-center'>
                     <Col xs={'auto'} className='d-flex justify-content-center'>
                         <h2>Как это работает</h2>
@@ -41,7 +41,7 @@ export const HowItWorks = () => {
                     </Col>
                 </Row>
             </Col>
-            <Col xxl={10} xs={11} className='flex1 d-flex' >
+            <Col xxl={10} xs={11} className='flex1 d-flex' ref={refs.blockRef}>
                 <Row className='w-100 ps-3 bottom-info pb-5'>
 
                     <Col xs={12} className='d-flex flex-column justify-content-center align-items-center flex1'>
