@@ -19,7 +19,7 @@ const questions = [{ question: 'Подтверждено: сознание на�
 export const Questions = ({refs}) => {
 
 
-    return <Row className="Questions p-4 flex-column align-items-center justify-content-center w-100 m-0" ref={refs}>
+    return <Row className="Questions p-4 flex-column align-items-center justify-content-center m-0" ref={refs}>
         <Col xs={12} className="my-5">
             <h3>Вопросы и ответы</h3>
         </Col>

@@ -32,7 +32,7 @@ function App() {
         <HowItWorks refs={{ howItWorksRef, blockRef }} />
       </section>
       <Reviews />
-      <section>
+      <section className='w-100'>
         <Questions refs={questionsRef} />
       </section>
       <section>
