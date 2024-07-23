@@ -1,5 +1,5 @@
 @import '../../styles/colors.sass'
-    
+
 .MyButton
     height: 64px
     width: 251px
@@ -19,3 +19,20 @@
     &:active
         color: lighten($black, 30)
 
+.form
+    width: 100%
+    background-color: $primary
+    color: $white
+
+    &:hover
+        background-color: lighten($primary, 5)
+
+    &:active
+        color: darken($white, 15)
+
+    &:disabled
+        background-color: lighten($primary, 10)
+
+        &:active
+            color: $white
+        

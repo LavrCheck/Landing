@@ -1,10 +1,12 @@
 import './MyButton.sass'
 
-export const MyButton = ({text, className}) => {
+export const MyButton = ({text, isForm = false, isDisabled, onClick}) => {
     
     return <>
         <button
-            className={`MyButton ${className}`}
+            className={`MyButton ${isForm ? 'form' : ''}`}
+            disabled={isDisabled}
+            onClick={onClick}
         >{text}</button>
     </>
 }
